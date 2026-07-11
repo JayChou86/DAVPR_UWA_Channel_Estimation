@@ -1,0 +1,36 @@
+# ===== 大型 .mat 数据文件（可通过运行代码重新生成） =====
+# 时变冲激响应矩阵（每个约 50MB，由 window_*fenduan.m 生成）
+时变冲激响应*.mat
+
+# TimeVeryCharater.m 输出文件（每个约 270MB+）
+TimeVery_*.mat
+
+# 其他大型中间结果
+resheap_*.mat
+*.asv
+
+# ===== MATLAB 自动生成文件 =====
+*.m~
+*.mat~
+
+# ===== 图像输出目录（可通过代码重新生成） =====
+图像/
+
+# ===== 误码率数据（含大量中间结果图） =====
+误码率数据/
+误码率数据0到30/
+
+# ===== YbiX 目录 =====
+YbiX/
+
+# ===== mean_CIR 目录中的 .mat 副本 =====
+mean_CIR/*.mat
+
+# ===== 操作系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== MATLAB 缓存 =====
+*.mex*
+*.slxc
