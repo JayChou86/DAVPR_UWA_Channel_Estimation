@@ -49,13 +49,13 @@ for i = 1:length(filenames)
         'LineStyle', line_styles{i}, 'Color', colors(i,:), 'LineWidth', 2);
 
     % 创建图例标签
-    legend_labels{i} = sprintf('深度: %d', depths(i));
+    legend_labels{i} = sprintf('Node %s (%dm)', char('A'+i-1), depths(i));
 end
 
 % 图形美化
 xlabel('多普勒频率 (Hz)', 'FontSize', 12);
 ylabel('归一化功率 (dB)', 'FontSize', 12);
-title('不同深度的多普勒功率谱对比', 'FontSize', 14);
+title('Doppler Power Spectra: Per-Node Comparison (UASN Deployment)', 'FontSize', 14);
 grid on;
 
 % 添加图例

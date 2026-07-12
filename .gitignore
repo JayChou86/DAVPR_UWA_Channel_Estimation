@@ -26,6 +26,9 @@ YbiX/
 # ===== mean_CIR 目录中的 .mat 副本 =====
 mean_CIR/*.mat
 
+# ===== 本地工具缓存 =====
+.zcode/
+
 # ===== 操作系统文件 =====
 .DS_Store
 Thumbs.db

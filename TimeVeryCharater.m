@@ -216,15 +216,19 @@ fprintf('基于RMS时延扩展估算的相干带宽 Bc_tau = %.2f Hz\n', Bc_tau)
 
 % save(mat_name);
 
+%% ===== 导出统计结果 =====
+addpath('utils');
+stats = computeChannelStats(h_matrix, step_duration, fs);
+fprintf('\n=== 信道统计汇总 ===\n');
+fprintf('相干时间 T_c = %.2f ms\n', stats.T_c * 1e3);
+fprintf('相干带宽 B_c = %.2f Hz\n', stats.B_c);
+fprintf('RMS 时延扩展 tau_rms = %.3f ms\n', stats.tau_rms);
+fprintf('多普勒质心 f_d_mean = %.3f Hz\n', stats.f_d_mean);
+fprintf('RMS 多普勒扩展 f_d_rms = %.3f Hz\n', stats.f_d_rms);
+fprintf('平均时延 tau_mean = %.3f ms\n', stats.tau_mean);
 
-
-
-
-
-
-
-
-
+% 可选: 保存统计结果
+% save('channel_stats.mat', 'stats');
 
 
 

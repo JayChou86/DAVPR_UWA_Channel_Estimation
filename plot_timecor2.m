@@ -65,7 +65,7 @@ for i = 1:length(filenames)
         'LineStyle', line_styles{i}, 'Color', colors(i,:), 'LineWidth', 1.5);
     
     % 创建图例标签
-    legend_labels{i} = sprintf('深度: %d', depths(i));
+    legend_labels{i} = sprintf('Node %s (%dm)', char('A'+i-1), depths(i));
 end
 
 % 图形美化

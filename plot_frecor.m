@@ -53,13 +53,13 @@ for i = 1:length(filenames)
         'LineStyle', line_styles{i}, 'Color', colors(i,:), 'LineWidth', 1.5);
 
     % 创建图例标签
-    legend_labels{i} = sprintf('深度: %d', depths(i));
+    legend_labels{i} = sprintf('Node %s (%dm)', char('A'+i-1), depths(i));
 end
 
 % 图形美化
 xlabel('频率差 (Hz)', 'FontSize', 12);
 ylabel('归一化幅度', 'FontSize', 12);
-title('频率间隔相关函数', 'FontSize', 14);
+title('Frequency Autocorrelation: Per-Node Comparison (UASN Deployment)', 'FontSize', 14);
 grid on;
 
 % 添加图例
