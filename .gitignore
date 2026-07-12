@@ -26,6 +26,9 @@ YbiX/
 # ===== mean_CIR 目录中的 .mat 副本 =====
 mean_CIR/*.mat
 
+# ===== 大型 .fig 文件（可重新生成）=====
+cir_fig1_raw_cir_4depth.fig
+
 # ===== 本地工具缓存 =====
 .zcode/
 
